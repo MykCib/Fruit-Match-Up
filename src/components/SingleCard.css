@@ -1,0 +1,56 @@
+.card {
+  position: relative;
+}
+.card span {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  border: 2px solid #fff;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  background-color: #1b1523;
+}
+
+@media screen and (min-width: 700px) {
+  .card span {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .card span {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card span {
+    font-size: 7rem;
+  }
+}
+
+/* front of the card */
+.card .front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+/* back of the card */
+
+.card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
