@@ -30,7 +30,7 @@ function App() {
     if (cards) {
       const res = cards.filter((card) => card.matched);
       if (res.length === 12) {
-        if (turns < Number(highscore)) {
+        if (Number(highscore) === 0 || turns < Number(highscore)) {
           localStorage.setItem("highscore", JSON.stringify(turns));
           setHighsore(String(turns));
         }

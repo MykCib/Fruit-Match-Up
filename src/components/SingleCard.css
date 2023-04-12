@@ -41,6 +41,7 @@
 .flipped .front {
   transform: rotateY(0deg);
   transition-delay: 0.2s;
+  background-color: #2f383e;
 }
 
 /* back of the card */

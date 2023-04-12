@@ -16,7 +16,7 @@ const SingleCard: React.FC<Props> = ({
   };
 
   return (
-    <div key={id} className="card">
+    <div key={String(id)} className="card">
       <div className={flipped ? "flipped" : ""}>
         <span className="front">{card.image}</span>
         <span className="back" onClick={handleClick}>
